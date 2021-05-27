@@ -7,7 +7,7 @@ jobs:
     name: Check Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check Out Repo
         uses: actions/checkout@v2
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
@@ -27,7 +27,7 @@ jobs:
     name: Check Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check Out Repo
         uses: actions/checkout@v2
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
@@ -47,7 +47,7 @@ jobs:
     name: Check Style
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check Out Repo
         uses: actions/checkout@v2
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
@@ -67,7 +67,7 @@ jobs:
     name: Check Types
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check Out Repo
         uses: actions/checkout@v2
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
@@ -87,7 +87,7 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check Out Repo
         uses: actions/checkout@v2
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
