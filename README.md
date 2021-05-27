@@ -10,6 +10,63 @@ A template for an application-agnostic framework for writing consumable applicat
 
 > Todo
 
+NOTE THAT THE JS BUILD EXPECTS TO BE INVOKED WITH NODEJS v14
+This means that global vars and modern js compatibility need to be handled if not invoked with node.
+
+## Scripts
+
+### `build`
+
+Creates a production build of the project using TypeScript (and maybe Webpack).
+
+### `check:lint`
+
+Checks code quality across entire codebase using `eslint`.
+
+### `check:style`
+
+Checks code style across entire codebase using `prettier`.
+
+### `check:types`
+
+Checks TypeScript types across entire codebase.
+
+### `clean:build`
+
+Deletes the `build` folder using `rimraf`.
+
+### `dev`
+
+Invokes the project using `ts-node` and `dotenv`.
+
+### `fix:style`
+
+Formats the project using `prettier`.
+
+### `start`
+
+Starts a reload-on-save development server using `nodemon`.
+
+### `test`
+
+Runs the test suite using `jest`.
+
+### `test:ci`
+
+Runs the test suite using `jest` in `--ci` mode.
+
+### `test:watch`
+
+Runs the test suite using `jest` and watches for file changes.
+
+### `lint`
+
+Default config for eslint. Not meant to be invoked directly.
+
+### `style`
+
+Default config for prettier. Not meant to be invoked directly.
+
 ## 12 Factor App Considerations
 
 > <https://12factor.net/>
