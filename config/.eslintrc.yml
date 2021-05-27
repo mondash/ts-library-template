@@ -1,0 +1,33 @@
+root: true
+
+# Expect all code to be run in the NodeJS runtime
+env:
+  node: true
+
+parser: "@typescript-eslint/parser"
+parserOptions:
+  project: "config/tsconfig.eslint.json"
+
+plugins:
+  - "@typescript-eslint"
+extends:
+  - "eslint:recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  - "prettier"
+
+rules:
+  "@typescript-eslint/explicit-module-boundary-types": "warn"
+
+overrides:
+  # Jest test files should use additional linting configuration
+  - files:
+      - "*.test.ts"
+    env:
+      jest: true
+
+    plugins:
+      - "jest"
+    extends:
+      - "plugin:jest/recommended"
+      - "plugin:jest/style"

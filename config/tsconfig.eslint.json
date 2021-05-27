@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node", "jest"]
+  },
+  "references": [
+    { "path": "./config/tsconfig.src.json" },
+    { "path": "./config/tsconfig.tests.json" },
+    { "path": "./config/tsconfig.tools.json" }
+  ],
+  "include": ["../**/*"],
+  "exclude": ["../node_modules"]
+}

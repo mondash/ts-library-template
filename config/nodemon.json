@@ -1,0 +1,15 @@
+{
+  "ext": "*",
+  "exec": "yarn dev",
+  "ignore": [
+    ".git",
+    ".gitignore",
+    ".vscode",
+    "build",
+    "coverage",
+    "docs",
+    "node_modules",
+    "README.md",
+    "LICENSE"
+  ]
+}
