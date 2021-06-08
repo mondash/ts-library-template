@@ -8,9 +8,12 @@
     "target": "es2020",
     "types": ["node"],
 
+    "resolveJsonModule": true,
+
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": ["../.git", "../build", "../coverage", "../node_modules"]
 }

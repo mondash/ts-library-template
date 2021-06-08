@@ -9,5 +9,5 @@
     { "path": "./config/tsconfig.tools.json" }
   ],
   "include": ["../**/*"],
-  "exclude": ["../node_modules"]
+  "exclude": ["../.git", "../build", "../coverage", "../node_modules"]
 }

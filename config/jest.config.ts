@@ -1,5 +1,8 @@
 import { Config } from "@jest/types";
+// import { pathsToModuleNameMapper } from "ts-jest/utils";
 import path from "path";
+
+// import { compilerOptions } from "./tsconfig.tests.json";
 
 const ignorePatterns = [
   "<rootDir>/node_modules",
@@ -17,6 +20,11 @@ const baseConfig: Config.InitialOptions = {
   testPathIgnorePatterns: ignorePatterns,
   verbose: true,
 
+  moduleNameMapper: {
+    "^@test$": "<rootDir>/test",
+    "^@test/(.*)": "<rootDir>/test/$1",
+  },
+
   collectCoverage: true,
   collectCoverageFrom: ["<rootDir>/**/*.ts"],
   coveragePathIgnorePatterns: ignorePatterns,
@@ -26,6 +34,12 @@ const baseConfig: Config.InitialOptions = {
     "jest-watch-typeahead/filename",
     "jest-watch-typeahead/testname",
   ],
+
+  globals: {
+    "ts-jest": {
+      tsconfig: "<rootDir>/config/tsconfig.tests.json",
+    },
+  },
 };
 
 const projects: Config.InitialOptions[] = [

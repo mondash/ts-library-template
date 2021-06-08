@@ -5,13 +5,13 @@
   "files.eol": "\n",
 
   "eslint.options": {
-    "configFile": ".\\config\\.eslintrc.yml",
-    "ignorePath": ".\\config\\.eslintignore"
+    "configFile": "./config/.eslintrc.yml",
+    "ignorePath": "./config/.eslintignore"
   },
   "eslint.debug": true,
 
-  "prettier.configPath": ".\\config\\.prettierrc.json",
-  "prettier.ignorePath": ".\\config\\.prettierignore",
+  "prettier.configPath": "./config/.prettierrc.json",
+  "prettier.ignorePath": "./config/.prettierignore",
 
-  "typescript.tsdk": ".\\node_modules\\typescript\\lib"
+  "typescript.tsdk": "./node_modules/typescript/lib"
 }

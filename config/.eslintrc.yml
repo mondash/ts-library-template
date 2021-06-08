@@ -6,10 +6,14 @@ env:
 
 parser: "@typescript-eslint/parser"
 parserOptions:
-  project: "config/tsconfig.eslint.json"
+  project:
+    - "config/tsconfig.src.json"
+    - "config/tsconfig.tests.json"
+    - "config/tsconfig.tools.json"
+  EXPERIMENTAL_useSourceOfProjectReferenceRedirect: true # TODO
 
 plugins:
-  - "@typescript-eslint"
+  - "import"
 extends:
   - "eslint:recommended"
   - "plugin:@typescript-eslint/recommended"
@@ -19,10 +23,25 @@ extends:
 rules:
   "@typescript-eslint/explicit-module-boundary-types": "warn"
 
+settings:
+  import/parsers:
+    "@typescript-eslint/parser":
+      - ".ts"
+      # - ".tsx" # TODO
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true
+      project:
+        - "config/tsconfig.src.json"
+        - "config/tsconfig.tools.json"
+        - "config/tsconfig.tests.json"
+
 overrides:
   # Jest test files should use additional linting configuration
   - files:
       - "*.test.ts"
+
+    # Include jest globals
     env:
       jest: true
 
