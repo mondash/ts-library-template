@@ -33,8 +33,8 @@ settings:
       alwaysTryTypes: true
       project:
         - "config/tsconfig.src.json"
-        - "config/tsconfig.tools.json"
         - "config/tsconfig.tests.json"
+        - "config/tsconfig.tools.json"
 
 overrides:
   # Jest test files should use additional linting configuration
