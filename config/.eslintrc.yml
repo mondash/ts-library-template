@@ -1,0 +1,52 @@
+root: true
+
+# Expect all code to be run in the NodeJS runtime
+env:
+  node: true
+
+parser: "@typescript-eslint/parser"
+parserOptions:
+  project:
+    - "config/tsconfig.src.json"
+    - "config/tsconfig.tests.json"
+    - "config/tsconfig.tools.json"
+  EXPERIMENTAL_useSourceOfProjectReferenceRedirect: true # TODO
+
+plugins:
+  - "import"
+extends:
+  - "eslint:recommended"
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  - "prettier"
+
+rules:
+  "@typescript-eslint/explicit-module-boundary-types": "warn"
+
+settings:
+  import/parsers:
+    "@typescript-eslint/parser":
+      - ".ts"
+      # - ".tsx" # TODO
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true
+      project:
+        - "config/tsconfig.src.json"
+        - "config/tsconfig.tests.json"
+        - "config/tsconfig.tools.json"
+
+overrides:
+  # Jest test files should use additional linting configuration
+  - files:
+      - "*.test.ts"
+
+    # Include jest globals
+    env:
+      jest: true
+
+    plugins:
+      - "jest"
+    extends:
+      - "plugin:jest/recommended"
+      - "plugin:jest/style"

@@ -1,0 +1,17 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+
+  "eslint.options": {
+    "configFile": "./config/.eslintrc.yml",
+    "ignorePath": "./config/.eslintignore"
+  },
+  "eslint.debug": true,
+
+  "prettier.configPath": "./config/.prettierrc.json",
+  "prettier.ignorePath": "./config/.prettierignore",
+
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

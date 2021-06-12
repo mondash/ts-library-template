@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../build/tools"
+  },
+  "include": ["..", "../bin", "../config"],
+  "exclude": [
+    "../.git",
+    "../build",
+    "../coverage",
+    "../node_modules",
+    "../src",
+    "../test",
+    "../**/*.test.ts",
+    "../**/__tests__"
+  ]
+}
