@@ -2,7 +2,7 @@
 
 TypeScript Application Template
 
-[![codecov](codecov-icon-link)](codecov-repo-overview-link)
+[![codecov][codecov-icon-link]][codecov-repo-overview-link]
 
 ## Purpose
 
