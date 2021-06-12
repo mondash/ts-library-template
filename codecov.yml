@@ -1,0 +1,12 @@
+ignore:
+  - ".git"
+  - ".vscode"
+  - "build"
+  - "config"
+  - "coverage"
+  - "docs"
+  - "node_modules"
+  - "test"
+  - "**/__tests__"
+  - "**/*.test.ts"
+  # - "**/*.test.tsx" # TODO
