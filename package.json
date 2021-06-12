@@ -7,7 +7,7 @@
   "author": "Matthew Ondash <ondashm@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "echo TODO",
+    "build": "tsc --build tsconfig.json",
     "check:lint": "yarn lint .",
     "check:style": "yarn style --check .",
     "check:types": "tsc --build tsconfig.json",
