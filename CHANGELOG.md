@@ -1,5 +1,11 @@
 # @matthew-gh-org/ts-app-template
 
+## 0.1.3
+
+### Patch Changes
+
+- d5e639f: updated build
+
 ## 0.1.2
 
 ### Patch Changes
