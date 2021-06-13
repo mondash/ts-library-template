@@ -20,7 +20,7 @@ Visual Studio Code editor config
 
 ###  bin
 
-Scripts not meant to be included in distribution
+Scripts not meant to be included in distribution\
 Only used in non-production environments
 
 ###  build
