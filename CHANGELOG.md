@@ -1,5 +1,12 @@
 # @matthew-gh-org/ts-app-template
 
+## 0.1.2
+
+### Patch Changes
+
+- 656e634: bumping
+- bce7663: bump again
+
 ## 0.1.1
 
 ### Patch Changes
