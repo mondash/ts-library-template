@@ -1,4 +1,4 @@
-import { returnTwo } from "./index";
+import { returnTwo, returnThree } from "./index";
 import { utils } from "@test";
 import { returnFour } from "@test/utils";
 
@@ -8,6 +8,10 @@ test("works", () => {
 
 test("returns 2", () => {
   expect(returnTwo()).toEqual(2);
+});
+
+test("returns 3", () => {
+  expect(returnThree()).toEqual(3);
 });
 
 test("returns 4", () => {
