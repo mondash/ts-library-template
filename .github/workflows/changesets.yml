@@ -29,6 +29,8 @@ jobs:
       - name: Changesets
         uses: changesets/action@master
         with:
+          commit: Publish New Version
+          title: Publish New Version
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ GITHUB.TOKEN }}
