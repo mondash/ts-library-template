@@ -12,9 +12,6 @@ A template for an application-agnostic framework for writing consumable applicat
 
 > Todo
 
-NOTE THAT THE JS BUILD EXPECTS TO BE INVOKED WITH NODEJS v14
-This means that global vars and modern js compatibility need to be handled if not invoked with node.
-
 ## Scripts
 
 ### `build`
