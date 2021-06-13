@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --build tsconfig.json",
+    "changeset": "changeset",
     "check:lint": "yarn lint .",
     "check:style": "yarn style --check .",
     "check:types": "tsc --build tsconfig.json",
