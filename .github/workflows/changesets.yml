@@ -31,8 +31,8 @@ jobs:
         with:
           commit: Publish New Version
           title: Publish New Version
-          publish: yarn changelog:publish
-          version: yarn changelog:version
+          publish: yarn changeset:publish
+          version: yarn changeset:version
         env:
           GITHUB_TOKEN: ${{ GITHUB.TOKEN }}
           NODE_AUTH_TOKEN: ${{ GITHUB.TOKEN }}
