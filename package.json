@@ -1,6 +1,6 @@
 {
   "name": "@matthew-gh-org/ts-app-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript Application Template",
   "main": "index.js",
   "repository": "https://github.com/matthew-gh-org/ts-app-template.git",
