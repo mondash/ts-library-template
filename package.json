@@ -20,6 +20,7 @@
     "test": "jest --config config/jest.config.ts",
     "test:ci": "yarn test --ci",
     "test:watch": "yarn test --watch",
+    "version": "changeset version && yarn fix:style",
     "lint": "eslint --config config/.eslintrc.yml --ignore-path config/.eslintignore",
     "style": "prettier --config config/.prettierrc.json --ignore-path config/.prettierignore"
   },
