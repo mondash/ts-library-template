@@ -10,6 +10,17 @@
   },
   "eslint.debug": true,
 
+  "markdownlint.config": {
+    // Provides compatibility for changesets (decent fix, not great)
+    "first-line-heading": {
+      "front_matter_title": "."
+    },
+    // Provides compatibility for changelogs (and is just good in general)
+    "no-duplicate-header": {
+      "siblings_only": true
+    }
+  },
+
   "prettier.configPath": "./config/.prettierrc.json",
   "prettier.ignorePath": "./config/.prettierignore",
 
