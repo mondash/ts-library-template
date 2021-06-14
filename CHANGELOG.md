@@ -1,5 +1,11 @@
 # @matthew-gh-org/ts-app-template
 
+## 0.2.0
+
+### Minor Changes
+
+- c62a621: Fixes package build
+
 ## 0.1.3
 
 ### Patch Changes
