@@ -2,11 +2,16 @@
   "name": "@matthew-gh-org/ts-app-template",
   "version": "0.1.3",
   "description": "TypeScript Application Template",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "repository": "https://github.com/matthew-gh-org/ts-app-template.git",
   "author": "Matthew Ondash <ondashm@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist/*",
+    "!dist/**/__tests__",
+    "!dist/**/*.test.*"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "build:dist": "tsc --build config/tsconfig.src.json",
