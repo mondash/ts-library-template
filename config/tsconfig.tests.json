@@ -10,7 +10,13 @@
     }
   },
   "include": ["../**/*.test.ts", "../**/__tests__", "../test"],
-  "exclude": ["../.git", "../build", "../coverage", "../node_modules"],
+  "exclude": [
+    "../.git",
+    "../build",
+    "../coverage",
+    "../dist",
+    "../node_modules"
+  ],
   "references": [
     { "path": "./tsconfig.src.json" },
     { "path": "./tsconfig.tools.json" }

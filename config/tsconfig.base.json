@@ -15,5 +15,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["../.git", "../build", "../coverage", "../node_modules"]
+  "exclude": [
+    "../.git",
+    "../build",
+    "../coverage",
+    "../dist",
+    "../node_modules"
+  ]
 }

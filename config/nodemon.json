@@ -3,13 +3,18 @@
   "exec": "yarn dev",
   "ignore": [
     ".git",
-    ".gitignore",
+    ".changeset",
+    ".github",
     ".vscode",
     "build",
     "coverage",
+    "dist",
     "docs",
     "node_modules",
-    "README.md",
-    "LICENSE"
+    ".gitignore",
+    "CHANGELOG.md",
+    "codecov.yml",
+    "LICENSE",
+    "README.md"
   ]
 }
