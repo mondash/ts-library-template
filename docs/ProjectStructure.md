@@ -89,7 +89,7 @@ Test and testing utility TS config
 
 ### `tsconfig.tools.json`
 
-Handles compilation of other devtools and config files. Does NOT handle tests.
+Handles compilation of other devtools and config files. Does NOT handle tests
 
 ### `tsconfig.json`
 
