@@ -6,70 +6,28 @@
 
 A brief description of each folder's contents and/or purpose
 
-###  .git
-
-Data for your local git repo
-
-###  .github
-
-Actions and workflows to be used by GitHub Actions
-
-###  .vscode
-
-Visual Studio Code editor config
-
-###  bin
-
-Scripts not meant to be included in distribution\
-Only used in non-production environments
-
-###  build
-
-Compiled code
-
-###  config
-
-Configuration for devtools
-
-###  coverage
-
-Jest coverage report
-
-###  docs
-
-Project documentation
-
-###  node_modules
-
-Dependencies
-
-###  src
-
-Source code
-
-###  test
-
-Test utilities
-
-###  .gitignore
-
-A list of patterns to ignore in version control
-
-###  package.json
-
-NodeJS package manifest
-
-###  README.md
-
-Project README (use Nerd Font for glyphs)
-
-###  tsconfig.json
-
-Project TypeScript config
-
-###  yarn.lock
-
-Dependency lock file
+| file/folder name | description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+|  .changeset     | Configuration for changeset tool                             |
+|  .git           | Data for your local git repo                                 |
+|  .github        | Actions and workflows to be used by GitHub Actions           |
+|  .vscode        | Visual Studio Code editor config                             |
+|  bin            | Scripts meant to be used in non-production environments only |
+|  build          | Compiled code and build info                                 |
+|  config         | Configuration for devtools                                   |
+|  coverage       | Jest coverage report                                         |
+|  dist           | Code to be included in package                               |
+|  docs           | Project documentation                                        |
+|  node_modules   | Dependencies                                                 |
+|  src            | Source code                                                  |
+|  test           | Test utilities                                               |
+|  .gitignore     | A list of patterns to ignore in version control              |
+|  codecov.yml    | Configuration for codecov tool                               |
+|  CHANGELOG.md   | Package version changelog                                    |
+|  package.json   | NodeJS package manifest                                      |
+|  README.md      | Project README (use Nerd Font for glyphs)                    |
+|  tsconfig.json  | Project TypeScript config                                    |
+|  yarn.lock      | Dependency lock file                                         |
 
 ## TypeScript
 
