@@ -6,6 +6,7 @@
   "include": ["..", "../bin", "../config"],
   "exclude": [
     "../.git",
+    "../.github",
     "../build",
     "../coverage",
     "../dist",

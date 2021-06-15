@@ -12,6 +12,7 @@
   "include": ["../**/*.test.ts", "../**/__tests__", "../test"],
   "exclude": [
     "../.git",
+    "../.github",
     "../build",
     "../coverage",
     "../dist",

@@ -17,6 +17,7 @@
   },
   "exclude": [
     "../.git",
+    "../.github",
     "../build",
     "../coverage",
     "../dist",
