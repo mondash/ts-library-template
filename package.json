@@ -20,7 +20,7 @@
     "check:types": "tsc --build tsconfig.json",
     "clean": "rimraf build dist",
     "fix:style": "yarn style --write .",
-    "package:publish": "yarn build:dist && changeset publish",
+    "package:publish": "yarn build && changeset publish",
     "package:version": "changeset version && yarn fix:style",
     "test": "jest --config config/jest.config.ts",
     "test:ci": "yarn test --ci",
