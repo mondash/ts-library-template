@@ -1,4 +1,4 @@
-# @mondash/ts-app-template
+# @mondash/ts-library-template
 
 ## 0.3.1
 

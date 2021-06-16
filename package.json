@@ -1,8 +1,8 @@
 {
-  "name": "@mondash/ts-app-template",
+  "name": "@mondash/ts-library-template",
   "version": "0.3.1",
-  "description": "TypeScript Application Template",
-  "repository": "https://github.com/mondash/ts-app-template.git",
+  "description": "TS Library Template",
+  "repository": "https://github.com/mondash/ts-library-template.git",
   "author": "Matthew Ondash <ondashm@gmail.com>",
   "license": "MIT",
   "files": [
