@@ -1,5 +1,18 @@
 # @mondash/ts-app-template
 
+## 0.3.0
+
+### Minor Changes
+
+- 6efcdb4: Transferred repo to user account
+
+### Patch Changes
+
+- be20180: src's tsbuildinfo file now created in build directory
+- edb697b: updated misc folder exclusion rules
+- edb697b: updated codecov config
+- febd98b: updated some folder exclusions
+
 ## 0.2.0
 
 ### Minor Changes
