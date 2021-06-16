@@ -1,6 +1,6 @@
 {
   "name": "@mondash/ts-app-template",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "TypeScript Application Template",
   "repository": "https://github.com/mondash/ts-app-template.git",
   "author": "Matthew Ondash <ondashm@gmail.com>",
