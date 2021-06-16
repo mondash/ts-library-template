@@ -4,25 +4,24 @@ Project Runbook
 
 ## Scripts
 
-| Script              | Description                                                      |
-| ------------------- | ---------------------------------------------------------------- |
-| `build`             | Builds the entire project using `TypeScript`                     |
-| `build:dist`        | Builds the project for distrubution using `TypeScript`           |
-| `changeset:add`     | Adds a new changeset file                                        |
-| `changeset:version` | Increments the package version according to current changesets   |
-| `changeset:publish` | Publishes a new package version                                  |
-| `check:lint`        | Checks code quality across entire codebase using `eslint`.       |
-| `check:style`       | Checks code style across entire codebase using `prettier`.       |
-| `check:types`       | Checks `TypeScript` types across entire codebase.                |
-| `clean:build`       | Deletes the `build` folder using `rimraf`.                       |
-| `dev`               | Invokes the project using `ts-node` and `dotenv`.                |
-| `fix:style`         | Formats the project using `prettier`.                            |
-| `start`             | Starts a reload-on-save development server using `nodemon`.      |
-| `test`              | Runs the test suite using `jest`.                                |
-| `test:ci`           | Runs the test suite using `jest` in `--ci` mode.                 |
-| `test:watch`        | Runs the test suite using `jest` and watches for file changes.   |
-| `lint`              | Default config for `eslint`. Not meant to be invoked directly.   |
-| `style`             | Default config for `prettier`. Not meant to be invoked directly. |
+<!-- TODO These will probably end up as scripts in the bin folder if they get any more complex -->
+
+| Script            | Description                                 |
+| ----------------- | ------------------------------------------- |
+| `build`           | Builds the project using `typescript`.      |
+| `changeset`       | Adds a new changeset file.                  |
+| `check:lint`      | Checks project code quality using `eslint`. |
+| `check:style`     | Checks project code style using `prettier`. |
+| `check:types`     | Checks project types using `typescript`.    |
+| `clean`           | Cleans project files using`rimraf`.         |
+| `fix:style`       | Formats project using `prettier`.           |
+| `package:publish` | Publishes package using `changesets`.       |
+| `package:version` | Versions package using `changesets`.        |
+| `test`            | Runs tests using `jest`.                    |
+| `test:ci`         | Runs tests using `jest` in `--ci` mode.     |
+| `test:watch`      | Runs tests using `jest` in `--watch` mode.  |
+| `lint`            | Default config for `eslint`.                |
+| `style`           | Default config for `prettier`.              |
 
 ## 12 Factor App Considerations
 
