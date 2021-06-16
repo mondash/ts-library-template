@@ -5,3 +5,5 @@ export function returnTwo(): number {
 export function returnThree(): number {
   return 3;
 }
+
+console.log("INDEX");

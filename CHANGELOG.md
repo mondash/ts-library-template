@@ -1,4 +1,4 @@
-# @matthew-gh-org/ts-app-template
+# @mondash/ts-app-template
 
 ## 0.2.0
 
