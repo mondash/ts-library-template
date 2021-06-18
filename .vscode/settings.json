@@ -9,6 +9,7 @@
     "ignorePath": "./config/.eslintignore"
   },
   "eslint.debug": true,
+  "eslint.packageManager": "yarn",
 
   "markdownlint.config": {
     // Provides compatibility for changesets (decent fix, not great)
