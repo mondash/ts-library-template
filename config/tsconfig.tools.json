@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "../build/tools"
   },
-  "include": ["..", "../bin", "../config"],
+  "include": ["..", "../bin", "../config", "./tsconfig.tests.json"],
   "exclude": [
     "../.git",
     "../.github",

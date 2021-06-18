@@ -1,8 +1,8 @@
 import { Config } from "@jest/types";
-// import { pathsToModuleNameMapper } from "ts-jest/utils";
+import { pathsToModuleNameMapper } from "ts-jest/utils";
 import path from "path";
 
-// import { compilerOptions } from "./tsconfig.tests.json";
+import { compilerOptions } from "./tsconfig.tests.json";
 
 const ignorePatterns = [
   "<rootDir>/.git",
@@ -25,10 +25,7 @@ const baseConfig: Config.InitialOptions = {
   testPathIgnorePatterns: ignorePatterns,
   verbose: true,
 
-  moduleNameMapper: {
-    "^@test$": "<rootDir>/test",
-    "^@test/(.*)": "<rootDir>/test/$1",
-  },
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
 
   collectCoverage: true,
   collectCoverageFrom: ["<rootDir>/**/*.ts"],
