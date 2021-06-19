@@ -1,0 +1,1 @@
+console.log("TYPESCRIPT LIB TEMPLATE!");
