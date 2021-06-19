@@ -1,5 +1,11 @@
 # @mondash/ts-library-template
 
+## 0.4.3
+
+### Patch Changes
+
+- 7e4254f: add missing shebang to bin script
+
 ## 0.4.2
 
 ### Patch Changes
