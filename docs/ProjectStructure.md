@@ -52,4 +52,12 @@ Handles compilation of other devtools and config files. Does NOT handle tests
 
 Root project file. Only handles linking project references.
 
+## Misc notes
+
+### Package bin scripts must have the appropriate shebang as the first line in their entry point
+
+```shell
+#!/usr/bin/env node
+```
+
 [project-references-link]: https://www.typescriptlang.org/docs/handbook/project-references.html
