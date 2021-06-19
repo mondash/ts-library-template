@@ -1,5 +1,11 @@
 # @mondash/ts-library-template
 
+## 0.4.1
+
+### Patch Changes
+
+- 861ea5a: a bunch of improvements
+
 ## 0.4.0
 
 ### Minor Changes
