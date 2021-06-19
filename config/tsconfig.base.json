@@ -3,6 +3,9 @@
     "rootDir": "..",
     "composite": true,
 
+    "inlineSourceMap": true,
+    "declarationMap": true,
+
     "lib": ["es2020"],
     "module": "commonjs",
     "target": "es2020",
