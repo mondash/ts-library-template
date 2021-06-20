@@ -8,9 +8,7 @@
   "author": "Matthew Ondash <ondashm@gmail.com>",
   "license": "MIT",
   "files": [
-    "dist/*",
-    "!dist/**/__tests__",
-    "!dist/**/*.test.*"
+    "dist"
   ],
   "bin": {
     "tlt": "dist/bin/tlt.js"
@@ -19,6 +17,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --build config/tsconfig.src.json",
+    "build:all": "tsc --build tsconfig.json",
     "changeset": "changeset",
     "check:lint": "yarn lint .",
     "check:style": "yarn style --check .",
