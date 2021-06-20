@@ -23,6 +23,33 @@ Project Runbook
 | `lint`            | Default config for `eslint`.                |
 | `style`           | Default config for `prettier`.              |
 
+## Prereleases
+
+This project supports prereleases via `changesets`. The process for this is as follows:
+
+### Creating a prerelease
+
+1. Merge your changes (with changesets) to a prerelease branch (`prerelease/[TAG]`).
+2. Checkout your prerelease branch locally and run `yarn changeset pre enter [TAG]`.
+3. Push changes to prerelease branch.
+4. Merge auto-generated PR to publish new prerelease version.
+5. Repeat steps 1-4 to publish additional versions.
+
+### Converting to a release
+
+1. Checkout prerelease branch locally and run `yarn changeset pre exit`.
+2. Push changes to prerelease branch.
+3. Merge prerelease branch to main.
+4. Merge auto-generated PR to publish new release version.
+
+## Important notes
+
+- `main` should **never** be in _pre_ mode.
+- Only enter _pre_ mode in a prerelease branch.
+- Make sure to exit _pre_ mode before merging to `main`.
+
+[Changesets docs on prereleases][changesets-prereleases-docs-link]
+
 ## 12 Factor App Considerations
 
 > <https://12factor.net/>
@@ -50,3 +77,5 @@ Project Runbook
 ### 11. Logs
 
 ### 12. Admin Processes
+
+[changesets-prereleases-docs-link]: https://github.com/atlassian/changesets/blob/c426035565cfac518238c8bf32f3c496c66c0657/docs/prereleases.md
