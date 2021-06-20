@@ -17,7 +17,6 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --build config/tsconfig.src.json",
-    "build:all": "tsc --build tsconfig.json",
     "changeset": "changeset",
     "check:lint": "yarn lint .",
     "check:style": "yarn style --check .",
