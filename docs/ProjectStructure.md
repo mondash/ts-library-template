@@ -52,9 +52,10 @@ Handles compilation of other devtools and config files. Does NOT handle tests
 
 Root project file. Only handles linking project references.
 
-## Misc notes
+## Package bin scripts
 
-### Package bin scripts must have the appropriate shebang as the first line in their entry point
+- code in src
+- must have the appropriate shebang as the first line of file (see below)
 
 ```shell
 #!/usr/bin/env node
