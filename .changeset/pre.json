@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "test1",
+  "initialVersions": {
+    "@mondash/ts-library-template": "0.4.3"
+  },
+  "changesets": []
+}
