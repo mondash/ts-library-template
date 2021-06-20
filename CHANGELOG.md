@@ -1,5 +1,11 @@
 # @mondash/ts-library-template
 
+## 0.4.4-test1.0
+
+### Patch Changes
+
+- 33e90b3: test bump
+
 ## 0.4.3
 
 ### Patch Changes
