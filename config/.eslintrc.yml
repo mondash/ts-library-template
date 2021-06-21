@@ -13,8 +13,6 @@ parserOptions:
   # TODO https://github.com/typescript-eslint/typescript-eslint/issues/2094
   EXPERIMENTAL_useSourceOfProjectReferenceRedirect: true
 
-plugins:
-  - "import"
 extends:
   - "eslint:recommended"
   - "plugin:@typescript-eslint/recommended"
