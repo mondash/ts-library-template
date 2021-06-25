@@ -4,8 +4,6 @@ Project Runbook
 
 ## Scripts
 
-<!-- TODO These will probably end up as scripts in the bin folder if they get any more complex -->
-
 | Script            | Description                                 |
 | ----------------- | ------------------------------------------- |
 | `build`           | Builds the project using `typescript`.      |
@@ -22,6 +20,55 @@ Project Runbook
 | `test:watch`      | Runs tests using `jest` in `--watch` mode.  |
 | `lint`            | Default config for `eslint`.                |
 | `style`           | Default config for `prettier`.              |
+
+## Development process
+
+<!-- TODO This should be a separate doc -->
+
+The development process outlined here is meant to be both strict and efficient. This process was designed to enable coordinating quick, painless, and reliable project contributions among many developers.
+
+### Issues
+
+All contributions to this project _must_ start with a GitHub issue.
+
+> TODO Add link to doc on issue creation
+> TODO Priority, projects, milestones
+
+### Branch or Fork
+
+To begin working on an issue, create a new branch or fork the repo in GitHub.
+
+### Local Dev
+
+To start dev work, clone the repo and run `yarn install`.
+
+<!-- TODO act cli docs
+To run the `tests` job using the large image:
+
+```shell
+act -j tests -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
+```
+-->
+
+> _"Structure your commits and commit messages with purpose."_
+>
+> _"Include quality changesets when appropriate."_
+>
+> _"Run the checks and tests before pushing."_
+
+### Push
+
+<!-- TODO talk about commit structure (especially with changesets) -->
+
+### PR
+
+### Merge
+
+<!-- TODO maybe not separate from PR -->
+
+### (Pre)Release
+
+### PROFIT
 
 ## Prereleases
 
@@ -49,33 +96,5 @@ This project supports prereleases via `changesets`. The process for this is as f
 - Make sure to exit _pre_ mode before merging to `main`.
 
 [Changesets docs on prereleases][changesets-prereleases-docs-link]
-
-## 12 Factor App Considerations
-
-> <https://12factor.net/>
-
-### 1. Codebase
-
-### 2. Dependencies
-
-### 3. Config
-
-### 4. Backing Services
-
-### 5. Build, release, run
-
-### 6. Processes
-
-### 7. Port Binding
-
-### 8. Concurrency
-
-### 9. Disposability
-
-### 10. Dev/prod parity
-
-### 11. Logs
-
-### 12. Admin Processes
 
 [changesets-prereleases-docs-link]: https://github.com/atlassian/changesets/blob/c426035565cfac518238c8bf32f3c496c66c0657/docs/prereleases.md
