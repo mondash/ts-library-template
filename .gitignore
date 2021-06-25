@@ -34,3 +34,12 @@ dist
 
 # Coverage reports
 coverage
+
+# Yarn v2 using Zero-install
+.yarn/*
+# !.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

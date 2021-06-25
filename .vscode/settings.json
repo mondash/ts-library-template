@@ -3,14 +3,13 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "files.eol": "\n",
-
+  "eslint.debug": true,
+  "eslint.nodePath": ".yarn/sdks",
   "eslint.options": {
     "configFile": "./config/.eslintrc.yml",
     "ignorePath": "./config/.eslintignore"
   },
-  "eslint.debug": true,
   "eslint.packageManager": "yarn",
-
   "markdownlint.config": {
     // Provides compatibility for changesets (decent fix, not great)
     "first-line-heading": {
@@ -21,9 +20,13 @@
       "siblings_only": true
     }
   },
-
   "prettier.configPath": "./config/.prettierrc.json",
   "prettier.ignorePath": "./config/.prettierignore",
-
-  "typescript.tsdk": "./node_modules/typescript/lib"
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": ".yarn/sdks/typescript/lib"
 }
