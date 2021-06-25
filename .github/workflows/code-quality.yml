@@ -15,15 +15,15 @@ jobs:
   #       uses: actions/setup-node@v2
   #       with:
   #         node-version: 14
-  #     - name: Cache Node Modules
-  #       uses: actions/cache@v2
-  #       if: ${{ !env.ACT }}
-  #       with:
-  #         path: "**/node_modules"
-  #         key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-  #         restore-keys: ${{ runner.os }}-node-modules-
+  # #      - name: Cache Node Modules
+  # #        uses: actions/cache@v2
+  # #        if: ${{ !env.ACT }}
+  # #        with:
+  # #          path: "**/node_modules"
+  # #          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+  # #          restore-keys: ${{ runner.os }}-node-modules-
   #     - name: Install Node Modules
-  #       run: yarn install --frozen-lockfile
+  #       run: yarn install --immutable
   #     - name: Run Build
   #       run: yarn build
   check-lint:
@@ -36,15 +36,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
+      # - name: Cache Node Modules
+      #   uses: actions/cache@v2
+      #   if: ${{ !env.ACT }}
+      #   with:
+      #     path: "**/node_modules"
+      #     key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Run Lint Check
         run: yarn check:lint
   check-style:
@@ -57,15 +57,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
+      # - name: Cache Node Modules
+      #   uses: actions/cache@v2
+      #   if: ${{ !env.ACT }}
+      #   with:
+      #     path: "**/node_modules"
+      #     key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Run Lint Check
         run: yarn check:style
   check-types:
@@ -78,15 +78,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
+      # - name: Cache Node Modules
+      #   uses: actions/cache@v2
+      #   if: ${{ !env.ACT }}
+      #   with:
+      #     path: "**/node_modules"
+      #     key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Run Lint Check
         run: yarn check:types
   tests:
@@ -99,15 +99,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
+      # - name: Cache Node Modules
+      #   uses: actions/cache@v2
+      #   if: ${{ !env.ACT }}
+      #   with:
+      #     path: "**/node_modules"
+      #     key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
+      #     restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Run Tests
         run: yarn test:ci
       - name: Code Coverage
