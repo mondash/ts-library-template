@@ -8,7 +8,6 @@ jobs:
   changesets:
     name: Changesets
     runs-on: ubuntu-latest
-    if: ${{ !env.ACT }}
     steps:
       - name: Check Out Repo
         uses: actions/checkout@v2
@@ -30,6 +29,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Changesets
         uses: changesets/action@master
+        if: ${{ !env.ACT }}
         with:
           commit: Publish New Version
           title: Publish New Version
