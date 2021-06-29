@@ -63,3 +63,5 @@ Good config and tooling, well-integrated, and great-looking.
 [prettier-docs-link]: https://prettier.io/docs/en/index.html
 [jest-docs-link]: https://jestjs.io/docs/getting-started
 [vscode-docs-link]: https://code.visualstudio.com/Docs
+
+> A work in progress...

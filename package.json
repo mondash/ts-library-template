@@ -1,6 +1,6 @@
 {
   "name": "@mondash/ts-library-template",
-  "version": "0.4.3",
+  "version": "0.0.0",
   "description": "TS Library Template",
   "homepage": "https://github.com/mondash/ts-library-template#readme",
   "bugs": "https://github.com/mondash/ts-library-template/issues",
@@ -11,7 +11,7 @@
     "dist"
   ],
   "bin": {
-    "tlt": "dist/bin/tlt.js"
+    "example": "dist/bin/example.js"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

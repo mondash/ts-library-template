@@ -97,4 +97,6 @@ This project supports prereleases via `changesets`. The process for this is as f
 
 [Changesets docs on prereleases][changesets-prereleases-docs-link]
 
+> A work in progress...
+
 [changesets-prereleases-docs-link]: https://github.com/atlassian/changesets/blob/c426035565cfac518238c8bf32f3c496c66c0657/docs/prereleases.md
