@@ -14,14 +14,8 @@ jobs:
   #     - name: Set Up NodeJS
   #       uses: actions/setup-node@v2
   #       with:
+  #         cache: yarn
   #         node-version: 14
-  #     - name: Cache Node Modules
-  #       uses: actions/cache@v2
-  #       if: ${{ !env.ACT }}
-  #       with:
-  #         path: "**/node_modules"
-  #         key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-  #         restore-keys: ${{ runner.os }}-node-modules-
   #     - name: Install Node Modules
   #       run: yarn install --frozen-lockfile
   #     - name: Run Build
@@ -35,14 +29,8 @@ jobs:
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
         with:
+          cache: yarn
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
       - name: Run Lint Check
@@ -56,14 +44,8 @@ jobs:
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
         with:
+          cache: yarn
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
       - name: Run Lint Check
@@ -77,14 +59,8 @@ jobs:
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
         with:
+          cache: yarn
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
       - name: Run Lint Check
@@ -98,14 +74,8 @@ jobs:
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
         with:
+          cache: yarn
           node-version: 14
-      - name: Cache Node Modules
-        uses: actions/cache@v2
-        if: ${{ !env.ACT }}
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-node-modules-
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
       - name: Run Tests
