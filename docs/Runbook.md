@@ -11,7 +11,7 @@ Project Runbook
 | `check:lint`      | Checks project code quality using `eslint`. |
 | `check:style`     | Checks project code style using `prettier`. |
 | `check:types`     | Checks project types using `typescript`.    |
-| `clean`           | Cleans project files using`rimraf`.         |
+| `clean`           | Cleans project files using `rimraf`.         |
 | `fix:style`       | Formats project using `prettier`.           |
 | `package:publish` | Publishes package using `changesets`.       |
 | `package:version` | Versions package using `changesets`.        |
