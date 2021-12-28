@@ -7,7 +7,7 @@ Project Runbook
 | Script            | Description                                 |
 | ----------------- | ------------------------------------------- |
 | `build`           | Builds the project using `typescript`.      |
-| `changeset`       | Adds a new changeset file.                  |
+| `changeset`       | Run the `changeset` tool.                   |
 | `check:lint`      | Checks project code quality using `eslint`. |
 | `check:style`     | Checks project code style using `prettier`. |
 | `check:types`     | Checks project types using `typescript`.    |
