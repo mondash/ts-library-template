@@ -5,18 +5,20 @@
   "files.eol": "\n",
 
   "eslint.options": {
-    "configFile": "./config/.eslintrc.yml",
+    "overrideConfigFile": "./config/.eslintrc.yml",
     "ignorePath": "./config/.eslintignore"
   },
   "eslint.debug": true,
   "eslint.packageManager": "yarn",
+  "eslint.useESLintClass": true,
 
+  // Markdown rules are not enforced, but following them is highly encouraged
   "markdownlint.config": {
     // Provides compatibility for changesets (decent fix, not great)
     "first-line-heading": {
       "front_matter_title": "."
     },
-    // Provides compatibility for changelogs (and is just good in general)
+    // Provides compatibility for changelogs (and is also good in general)
     "no-duplicate-header": {
       "siblings_only": true
     }
