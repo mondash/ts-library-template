@@ -5,10 +5,11 @@ import path from "path";
 import { compilerOptions } from "./tsconfig.tests.json";
 
 const ignorePatterns = [
-  "<rootDir>/node_modules",
+  "<rootDir>/.git",
   "<rootDir>/build",
   "<rootDir>/coverage",
   "<rootDir>/dist",
+  "<rootDir>/node_modules",
 ];
 
 const rootDir = path.resolve(__dirname, "..");
