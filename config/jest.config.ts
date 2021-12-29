@@ -1,14 +1,10 @@
 import { Config } from "@jest/types";
-import { pathsToModuleNameMapper } from "ts-jest/utils";
+import { pathsToModuleNameMapper } from "ts-jest";
 import path from "path";
 
 import { compilerOptions } from "./tsconfig.tests.json";
 
 const ignorePatterns = [
-  "<rootDir>/.git",
-  "<rootDir>/.changeset",
-  "<rootDir>/.github",
-  "<rootDir>/.vscode",
   "<rootDir>/node_modules",
   "<rootDir>/build",
   "<rootDir>/coverage",
@@ -53,9 +49,16 @@ const projects: Config.InitialOptions[] = [
   },
   {
     ...baseConfig,
+    displayName: { name: "Scripts", color: "yellow" },
+    testMatch: ["<rootDir>/scripts/**/*.test.ts"],
+    collectCoverageFrom: ["<rootDir>/scripts/**/*.ts"],
+  },
+  {
+    ...baseConfig,
     displayName: { name: "Tools", color: "magenta" },
-    testMatch: ["<rootDir>/!(src)/**/*.test.ts"],
-    collectCoverageFrom: ["<rootDir>/!(src)/**/*.ts"],
+    testMatch: ["<rootDir>/**/*.test.ts"],
+    testPathIgnorePatterns: ["<rootDir>/src", "<rootDir>/scripts"],
+    collectCoverageFrom: ["<rootDir>/**/*.ts"],
   },
 ];
 

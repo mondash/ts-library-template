@@ -9,14 +9,12 @@
       "@test/*": ["../test/*"]
     }
   },
-  "include": ["../**/*.test.ts", "../**/__tests__", "../test"],
-  "exclude": [
-    "../.git",
-    "../.github",
-    "../build",
-    "../coverage",
-    "../dist",
-    "../node_modules"
+  "include": [
+    "../src/**/__tests__",
+    "../src/**/*.test.*",
+    "../scripts/**/__tests__",
+    "../scripts/**/*.test.*",
+    "../test"
   ],
   "references": [
     { "path": "./tsconfig.src.json" },

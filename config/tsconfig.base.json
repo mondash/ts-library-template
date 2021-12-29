@@ -1,29 +1,22 @@
 {
   "compilerOptions": {
-    "rootDir": "..",
     "composite": true,
+    "rootDir": "..",
 
-    "inlineSourceMap": true,
     "declarationMap": true,
+    "inlineSourceMap": true,
 
     "lib": ["es2020"],
     "module": "commonjs",
     "target": "es2020",
     "types": ["node"],
 
+    "allowJs": true,
     "resolveJsonModule": true,
 
-    "strict": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "exclude": [
-    "../.git",
-    "../.github",
-    "../build",
-    "../coverage",
-    "../dist",
-    "../node_modules"
-  ]
+    "strict": true
+  }
 }

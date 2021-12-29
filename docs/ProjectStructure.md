@@ -12,7 +12,7 @@ A brief description of each folder's contents and/or purpose
 |  .git           | Data for your local git repo             |
 |  .github        | GitHub Integrations - actions, apps, etc |
 |  .vscode        | Visual Studio Code editor config         |
-|  bin            | Scripts for non-production environments  |
+|  scripts        | Scripts for non-production environments  |
 |  build          | Compiled code and build info             |
 |  config         | Configuration for devtools               |
 |  coverage       | Jest coverage report                     |

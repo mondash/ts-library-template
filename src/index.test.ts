@@ -7,14 +7,14 @@ test("works", () => {
 });
 
 test("returns 2", () => {
-  expect(returnTwo()).toEqual(2);
+  expect(returnTwo()).toBe(2);
 });
 
 test("returns 3", () => {
-  expect(returnThree()).toEqual(3);
+  expect(returnThree()).toBe(3);
 });
 
 test("returns 4", () => {
-  expect(utils.returnFour()).toEqual(4);
-  expect(returnFour()).toEqual(4);
+  expect(utils.returnFour()).toBe(4);
+  expect(returnFour()).toBe(4);
 });

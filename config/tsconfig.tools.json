@@ -3,17 +3,6 @@
   "compilerOptions": {
     "outDir": "../build/tools"
   },
-  "include": ["..", "../bin", "../config", "./tsconfig.tests.json"],
-  "exclude": [
-    "../.git",
-    "../.github",
-    "../build",
-    "../coverage",
-    "../dist",
-    "../node_modules",
-    "../src",
-    "../test",
-    "../**/*.test.ts",
-    "../**/__tests__"
-  ]
+  "include": [".", "./*.json", "../scripts"],
+  "exclude": ["../**/*.test.*", "../**/__tests__"]
 }

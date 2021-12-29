@@ -1,5 +1,10 @@
 root: true
 
+# TODO Allow linting for different envs (browser specifically)
+#      This will be especially important for using Next.js
+#      because some functions are run server-side while others are run client-side,
+#      and some functions might need to run in both environments.
+
 # Expect all code to be run in the NodeJS runtime
 env:
   node: true
