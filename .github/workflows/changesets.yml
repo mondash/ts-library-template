@@ -23,7 +23,7 @@ jobs:
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
       - name: Changesets
-        uses: changesets/action@master
+        uses: changesets/action@v1
         if: ${{ !env.ACT }}
         with:
           commit: Publish New Version
