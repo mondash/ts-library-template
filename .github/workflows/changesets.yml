@@ -12,13 +12,13 @@ jobs:
       - name: Check Out Repo
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Changesets requires the repo history
       - name: Set Up NodeJS
         uses: actions/setup-node@v2
         with:
           always-auth: true
           cache: yarn
-          node-version: 14
+          node-version: 16
           registry-url: "https://npm.pkg.github.com"
       - name: Install Node Modules
         run: yarn install --frozen-lockfile
