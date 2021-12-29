@@ -2,7 +2,6 @@
 
 [![Code Quality][code-quality-icon-link]][code-quality-workflow-link]
 
-
 ## Purpose
 
 A template for NodeJS libraries written in TypeScript with amazing devtools.
