@@ -6,27 +6,27 @@
 
 A brief description of each folder's contents and/or purpose
 
-| file/folder name | description                              |
-| ---------------- | ---------------------------------------- |
-|  .changeset     | Configuration for changeset tool         |
-|  .git           | Data for your local git repo             |
-|  .github        | GitHub Integrations - actions, apps, etc |
-|  .vscode        | Visual Studio Code editor config         |
-|  scripts        | Scripts for non-production environments  |
-|  build          | Compiled code and build info             |
-|  config         | Configuration for devtools               |
-|  coverage       | Jest coverage report                     |
-|  dist           | Code to distributed in package           |
-|  docs           | Project documentation                    |
-|  node_modules   | Dependencies                             |
-|  src            | Source code                              |
-|  test           | Test utilities                           |
-|  .gitignore     | Version control ignored paths            |
-|  CHANGELOG.md   | Package version changelog                |
-|  package.json   | NodeJS package manifest                  |
-|  README.md      | Project README                           |
-|  tsconfig.json  | Project TypeScript config                |
-|  yarn.lock      | Dependency lock file                     |
+| file/folder     | description                          |
+| --------------- | ------------------------------------ |
+|  .changeset    | Configuration for changeset tool     |
+|  .git          | Data for local git repo              |
+|  .github       | GitHub config for actions, apps, etc |
+|  .vscode       | Visual Studio Code editor config     |
+|  scripts       | Development scripts                  |
+|  build         | Compiled code and build info         |
+|  config        | Configuration for devtools           |
+|  coverage      | Jest coverage report                 |
+|  dist          | Code to distributed in package       |
+|  docs          | Project documentation                |
+|  node_modules  | Dependencies                         |
+|  src           | Source code                          |
+|  test          | Test utilities                       |
+|  .gitignore    | Git ignore path config               |
+|  CHANGELOG.md  | Package version changelog            |
+|  package.json  | NodeJS package manifest              |
+|  README.md     | Project README                       |
+|  tsconfig.json | Project TypeScript config            |
+|  yarn.lock     | Dependency lock file                 |
 
 ## TypeScript
 
