@@ -25,6 +25,7 @@ extends:
   - "prettier"
 
 rules:
+  "@typescript-eslint/no-throw-literal": "warn"
   "@typescript-eslint/explicit-module-boundary-types": "warn"
 
 overrides:
