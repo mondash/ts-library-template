@@ -2,3 +2,5 @@
 
 // TODO
 console.log("Example");
+
+export {};
