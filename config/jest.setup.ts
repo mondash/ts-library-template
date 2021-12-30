@@ -1,1 +1,3 @@
 /* GLOBAL JEST SETUP */
+
+export {};
