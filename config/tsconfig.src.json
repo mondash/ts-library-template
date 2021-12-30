@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "isolatedModules": true,
     "outDir": "../dist",
     "rootDir": "../src",
     "tsBuildInfoFile": "../build/src.tsbuildinfo"
